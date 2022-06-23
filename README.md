@@ -1,5 +1,10 @@
 # Kafka producer
 
+## Installing dependencies
+```bash
+poetry install
+```
+
 ## Run (localy)
 
 ```bash
