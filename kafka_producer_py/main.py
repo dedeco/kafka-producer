@@ -4,7 +4,7 @@ from kafka_producer_py.topic import Topic
 from multiprocessing import Process
 
 
-def main():
+def run():
     """Checks for topic and creates the topic if it does not exist"""
 
     if len(sys.argv) != 3:
@@ -31,5 +31,3 @@ def main():
         print("shutting down")
 
 
-if __name__ == "__main__":
-    main()
