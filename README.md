@@ -21,6 +21,6 @@ poetry run producer PLAINTEXT://127.0.0.1:9092 com.google.sample.purchases 1000
 {
    "username":"maxwellhannah",
    "currency":"EUR",
-   "amount":146107
+   "amount":1461.07
 }
 ```
