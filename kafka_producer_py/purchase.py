@@ -1,17 +1,18 @@
-
+import decimal
 from dataclasses import dataclass, field
 import json
 import random
 
 from faker import Faker
 
+fake = Faker()
+
 
 @dataclass
 class Purchase:
-    fake = Faker()
     username: str = field(default_factory=fake.user_name)
     currency: str = field(default_factory=fake.currency_code)
-    amount: int = field(default_factory=lambda: random.randint(100, 200000))
+    amount: decimal = field(default_factory=lambda: random.randrange(100, 200000))
 
     def serialize(self):
         """Serializes the object in JSON string format"""
